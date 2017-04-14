@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
                     @Override
                     public void onFailure(Call<PopularMovies> call, Throwable t) {
                         Log.d("MainActivity", "error loading from API");
+                        Log.d("MainActivity", getString(R.string.api_key));
                     }
                 });
 
